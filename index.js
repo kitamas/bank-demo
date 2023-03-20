@@ -31,7 +31,7 @@ exports.cxPrebuiltAgentsFinServ = (req, res) => {
 
         console.log(' verified: ' + card_verified);
         break;
-
+/*
       // BEGIN getAccountInfo
       case 'getAccountInfo':
         console.log(tag + ' was triggered.');
@@ -69,7 +69,8 @@ exports.cxPrebuiltAgentsFinServ = (req, res) => {
         console.log('default case called');
         res.status(200).end();
         break;
-    }
+*/
+}
   }
 };
                
