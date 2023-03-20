@@ -9,14 +9,16 @@ index.js
 
 exports.cxPrebuiltAgentsFinServ = (req, res) => {
   console.log('Cloud Function:', 'Invoked cloud function from Dialogflow');
-  let tag = req.body.fulfillmentInfo.tag;
+  // let tag = req.body.fulfillmentInfo.tag;
+  let tag = "validateAccount";
 
   if (!!tag) {
     switch (tag) {
       // BEGIN validateAccount
       case 'validateAccount':
         console.log(tag + ' was triggered.');
-        let card_last_four = req.body.sessionInfo.parameters.card_last_four;
+        //let card_last_four = req.body.sessionInfo.parameters.card_last_four;
+        let card_last_four = '1234';
 
         let card_verified;
         // card validation only fails if card number is 0000
